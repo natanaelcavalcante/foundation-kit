@@ -1,0 +1,12 @@
+export * from './dominio/email.vo';
+export * from './dominio/senha-nova.vo';
+export * from './dominio/usuario.entity';
+export * from './dominio/desafio-mfa.entity';
+export * from './dominio/politica-bloqueio.service';
+export type * from './aplicacao/portas';
+export * from './aplicacao/autenticar.use-case';
+export * from './aplicacao/confirmar-cadastro-mfa.use-case';
+export * from './aplicacao/verificar-mfa.use-case';
+export * from './aplicacao/solicitar-codigo-email.use-case';
+export * from './aplicacao/solicitar-redefinicao-senha.use-case';
+export * from './aplicacao/redefinir-senha.use-case';

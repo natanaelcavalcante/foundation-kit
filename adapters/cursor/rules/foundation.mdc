@@ -1,0 +1,5 @@
+---
+description: Protocolo de fundação da fábrica — sempre ativo
+alwaysApply: true
+---
+Siga `AGENTS.md` e `.foundation/constitution/`. Verifique `.foundation/state.json` antes de agir; nunca pule gates de aprovação; spec antes de código; bug corrigido = teste de regressão.

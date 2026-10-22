@@ -1,0 +1,22 @@
+{$APP_DOMAIN:localhost} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		-Server
+	}
+	# CSP com nonce é definida pelo middleware do Next.js.
+
+	request_body {
+		max_size 10MB
+	}
+
+	reverse_proxy web:3000 {
+		# Atrás da Cloudflare: confie no IP real do cliente
+		trusted_proxies cloudflare
+		header_up X-Real-IP {client_ip}
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://www.cursor.com/schemas/environment.schema.json",
+  "build": { "dockerfile": "Dockerfile", "context": "." },
+  "install": "bash .cursor/install.sh",
+  "start": "sudo service docker start"
+}

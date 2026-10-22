@@ -1,0 +1,21 @@
+{
+  "kit_version": "1.0.0",
+  "mode": "new",
+  "phase": 1,
+  "profile": null,
+  "language": { "code": "pt-BR", "ui_multi_language": false },
+  "gates": {
+    "brief": { "approved_at": null, "approved_by": null },
+    "architecture": { "approved_at": null, "approved_by": null },
+    "foundation": { "approved_at": null, "approved_by": null }
+  },
+  "modules": {
+    "_exemplo-ordem-servico": {
+      "type": "domain",
+      "status": "spec_proposed",
+      "spec_approved_at": null,
+      "done_at": null,
+      "coverage": null
+    }
+  }
+}
